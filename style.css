@@ -19,3 +19,36 @@ body{
 button {
   width: 175px;
 }
+
+/* .canvas {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: cyan;
+}
+
+#ball {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    margin: auto;
+    animation: rolling-around 1s ease infinite;
+}
+
+
+@keyframes rolling-around {
+    25% {
+        transform: translate(225px, 225px);
+    }
+    50% {
+        transform: translate(0px, 475px);
+    }
+    75% {
+        transform: translate(-225px, 225px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+} */
