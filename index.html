@@ -10,33 +10,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Pomodoro</title>
 </head>
 
 <body>
-    <title>Pomodoro! Out!</title>
-    <div class="after-div">
-        <h1>Le Pomodoro!</h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+     
     </div>
-
-    <div>
-        <p>Time Left:
-            <span id="timer-minutes">30</span> Minutes and
-            <span id="timer-seconds">0</span> Seconds</p>
-    </div>
-
-    <div>
-        <button type="button" id="start" class="btn btn-primary" onclick="countdownTimerBegin()">Click here to Begin!</button>
-        <button type="button" id="stop" class="btn btn-info" onclick="stopAndStart()">STOP!</button>
-        <button type="button" id="reset" class="btn btn-danger" onclick="stopAndReset()">Reset</button>
-    </div>
-
-
-
-    <!-- <div class="canvas">
-        <div id="ball">
+    <div id="canvas">
+          <div id="ball">
         </div>
-    </div> -->
+      <div id="div-pomodoro">
+        <title>Pomodoro! Out!</title>
+        <div>
+          <h1>Le Pomodoro!</h1>
+        </div>
+        <div>
+          <p>Time Left: <span id="timer-minutes">30</span> Minutes and <span id="timer-seconds">0</span> Seconds</p>
+        </div>
+        <div>
+          <button type="button" id="start" class="btn btn-primary" onclick="countdownTimerBegin()">Click here to Begin!</button>
+          <button type="button" id="stop" class="btn btn-info" onclick="stopAndStart()">STOP!</button>
+          <button type="button" id="reset" class="btn btn-danger" onclick="stopAndReset()">Reset</button>
+        </div>
+      </div>
+    
 
 
     <script src="script.js"></script>

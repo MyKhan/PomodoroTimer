@@ -1,54 +1,58 @@
 /* * {
-    border: 1px solid black;
+border: 1px solid black;
 } */
 
-.after-div {
-    margin-bottom: 50px;
-}
-
-div {
-    min-height: 50px;
-}
+/* .after-div {
+margin-bottom: 50px;
+} */
 
 body{
-  font-family: Lobster;
-  font-size: 24px;
-  text-align: center;
-}
-
-button {
-  width: 175px;
-}
-
-/* .canvas {
+    margin-top: 50px;
+    font-family: Lobster;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  button {
+    width: 175px;
+  }
+  
+  #canvas {
+    position: relative;
     margin: auto;
     width: 500px;
     height: 500px;
     background-color: cyan;
-}
-
-#ball {
-    width: 50px;
-    height: 50px;
+    border-radius: 50%;
+    transition: transform 1s linear;
+  }
+  
+  #ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
     background-color: black;
     border-radius: 50%;
-    margin: auto;
-    animation: rolling-around 1s ease infinite;
-}
-
-
-@keyframes rolling-around {
-    25% {
-        transform: translate(225px, 225px);
-    }
-    50% {
-        transform: translate(0px, 475px);
-    }
-    75% {
-        transform: translate(-225px, 225px);
-    }
-    100% {
-        transform: translate(0px, 0px);
-    }
-
-} */
+    left: 225px;
+  }
+  
+  #div-pomodoro {
+    position: absolute;
+    top: 156px;
+    transition: transform 1s linear;
+  }
+  
+  /* @keyframes rolling-around {
+  25% {
+  transform: translate(225px, 225px);
+  }
+  50% {
+  transform: translate(0px, 450px);
+  }
+  75% {
+  transform: translate(-225px, 225px);
+  }
+  100% {
+  transform: translate(0px, 0px);
+  }
+  } */
