@@ -1,58 +1,84 @@
-/* * {
-border: 1px solid black;
-} */
-
-/* .after-div {
-margin-bottom: 50px;
-} */
-
 body{
-    margin-top: 50px;
-    font-family: Lobster;
-    font-size: 24px;
-    text-align: center;
-  }
-  
-  button {
-    width: 175px;
-  }
-  
-  #canvas {
-    position: relative;
-    margin: auto;
-    width: 500px;
-    height: 500px;
-    background-color: cyan;
-    border-radius: 50%;
-    transition: transform 1s linear;
-  }
-  
-  #ball {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    left: 225px;
-  }
-  
-  #div-pomodoro {
-    position: absolute;
-    top: 156px;
-    transition: transform 1s linear;
-  }
-  
-  /* @keyframes rolling-around {
-  25% {
-  transform: translate(225px, 225px);
-  }
-  50% {
-  transform: translate(0px, 450px);
-  }
-  75% {
-  transform: translate(-225px, 225px);
-  }
-  100% {
-  transform: translate(0px, 0px);
-  }
-  } */
+  background-color: #333;
+margin-top: 50px;
+font-family: Lobster;
+font-size: 24px;
+text-align: center;
+}
+
+button {
+width: 175px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+div p span i {
+width: 50px;
+height: 50px;
+}
+
+.div-containing-canvas {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#canvas {
+display: inline-block;
+position: relative;
+margin: auto;
+width: 500px;
+height: 500px;
+background-color: cyan;
+border-radius: 50%;
+}
+
+.animate {
+  animation-name: round-and-round-you-go;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.reverse {
+animation-direction: reverse;
+}
+
+#ball {
+position: absolute;
+width: 20px;
+height: 20px;
+background-color: black;
+border-radius: 50%;
+left: 240px;
+}
+
+#div-pomodoro {
+position: absolute;
+top: 156px;
+}
+
+@keyframes round-and-round-you-go {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+
+@keyframes round-and-round-you-go {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
